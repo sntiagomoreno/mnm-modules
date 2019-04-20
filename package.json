@@ -1,0 +1,34 @@
+{
+  "name": "mnm-modules",
+  "version": "1.0.0",
+  "description": "Módulos y componentes para la plataforma web del Museo de Memoria Histórica",
+  "main": "index.js",
+  "author": "Santiago Moreno",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "css-loader": "^0.28.10",
+    "desandro-matches-selector": "^2.0.2",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.0.6",
+    "node-sass": "^4.11.0",
+    "postcss-easing-gradients": "^1.2.3",
+    "postcss-loader": "^2.1.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "flickity": "^2.1.0",
+    "normalize.css": "^8.0.0",
+    "typesplit": "^1.0.0"
+  }
+}

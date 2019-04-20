@@ -1,0 +1,23 @@
+.featured-date {
+	text-align: right;
+	// display: inline-block;
+	font-weight: 500;
+	margin: 0 0 0 auto;
+	padding-right: 15/16*1em;
+	margin-bottom: 20/16*1em;
+
+	span {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.month {
+		text-transform: lowercase;
+		font-size: 25/16*1em;
+	}
+
+	.date {
+		font-size: 60/16*1em;
+		line-height: 0.95;
+	}
+}

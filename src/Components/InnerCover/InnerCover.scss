@@ -1,0 +1,48 @@
+@import '../../functions';
+
+.inner-cover {
+	width: 100%;
+
+	.inner-cover-image {
+		width: 100%;
+		height: 90vw;
+		background: lightblue;
+	}
+
+	.page-info {
+		padding: 0 em(10);
+		margin-top: em(-43);
+		h1 {
+			font-size: em(50);
+			margin-bottom: em(7,50);
+		}
+
+		.inner-cover-subtitle {
+			font-size: em(16);
+		}
+
+		@media screen and (min-width: 650px) {
+			h1 {
+				font-size: em(60);
+			}
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+
+		.page-info {
+			padding-top: em(210);
+			margin-right: em(-150);
+			max-width: em(360);
+		}
+
+		.inner-cover-image {
+			width: em(628);
+			height: em(617);
+			background: lightblue;
+		}
+	}
+}

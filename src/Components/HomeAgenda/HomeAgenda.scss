@@ -1,0 +1,125 @@
+@import '../../functions';
+
+.home-agenda {
+	width: 100%;
+
+	h1 {
+		font-weight: 500;
+		font-size: em(40);
+		display: block;
+		padding: 0 0 0 em(20,40);
+		width: 80%;
+		position: relative;
+		z-index: 2;
+	}
+
+	.featured-image {
+		width: 100%;
+		height: 250px;
+		height: 70vw;
+		background: lightblue;
+		margin-bottom: em(40);
+		position: relative;
+		margin-top: em(-60);
+	}
+
+	.featured-event {
+		width: 100%;
+	}
+}
+
+.events-list {
+	width: 100%;
+	overflow: hidden;
+	padding: 0 15/16*1em;
+	
+	.event-item {
+		width: 100%;
+		display: block;
+		position: relative;
+		padding-bottom: 60/16*1em;
+		margin-bottom: 55/16*1em;
+
+		&::before {
+			content: attr(data-date);
+			display: block;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			font-weight: 800;
+			font-size: 80/16*1em;
+			text-transform: uppercase;
+			z-index: -1;
+			color: white;
+			@include text-stroke(1, #ccc);
+		}
+	}
+
+	.event-category {
+		font-size: 14/16*1em;
+		text-transform: capitalize;
+		font-weight: 600;
+		display: block;
+		margin-bottom: 28/14*1em;
+	}
+
+	h2 {
+		font-size: 25/16*1em;
+		font-weight: 500;
+		margin: 0 0 10/25*1em;
+	}
+
+	.event-time {
+		font-size: 15/16*1em;
+		font-family: 'Roboto', sans-serif;
+	}
+}
+
+.event-list-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20/16*1em 0 12/16*1em;
+
+	.next, .prev {
+		width: em(40);
+		height: em(40);
+		padding: 0;
+		margin: 0;
+
+		&:disabled,
+		&[disabled]{
+		  opacity: 0.25;
+		}
+	}
+
+	.flickity-page-dots {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+			cursor: pointer;
+			width: 45px;
+			height: 4px;
+			display: block;
+			float: left;
+			margin: 0 2px;
+			background: black;
+			opacity: 0.25;
+			transition: opacity 200ms;
+
+			&.is-selected {
+				opacity: 1;
+			}
+		}
+
+		@media screen and (min-width: 1024px) {
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

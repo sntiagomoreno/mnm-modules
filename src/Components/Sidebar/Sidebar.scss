@@ -1,0 +1,68 @@
+@import '../../functions';
+
+.sidebar-sticky {
+	width: 100%;
+	font-weight: 500;
+	overflow: hidden;
+	background: white;
+
+	ul {
+		padding: 0 em(20);
+		
+		overflow-x: scroll;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		transition: height 300ms;
+		&::-webkit-scrollbar {
+		    width: 0px;  /* remove scrollbar space */
+		    height: 0px;
+		    background: transparent;  /* optional: just make scrollbar invisible */
+		}
+		/* optional: show position indicator in red */
+		&::-webkit-scrollbar-thumb {
+			width: 0px;  /* remove scrollbar space */
+		    height: 0px;
+		    background: transparent;
+		}
+
+		&.active {
+			height: em(45);
+			border-bottom: 1px solid #ccc;
+		}
+	}
+
+	li {
+		margin: em(13,18) em(30,18) em(15,18) 0;
+		opacity: 0.25;
+		transition: opacity 300ms;
+
+		&.active {
+			opacity: 1;
+		}
+	}
+
+	.sidebar-nav{
+		width: 100%;
+		display: flex;
+		font-size: em(18);
+		position: relative;
+		padding: 0 em(20,18);
+		border-bottom: 1px solid #ccc;
+		
+	}
+
+	.sidebar-subnav{
+		width: 100%;
+		display: flex;
+		font-size: em(16);
+		height: 0;
+	}
+
+	.sidebar-subsubnav{
+		// width: 100%;
+		display: flex;
+		font-size: em(16);
+		overflow-x: scroll;
+		height: 0;
+	}
+}

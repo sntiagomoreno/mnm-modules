@@ -1,0 +1,15 @@
+@import '../../functions';
+
+
+.gallery-wrapper {
+	position: relative;
+	height: 100vh;
+	width: 100%
+}
+
+.image-gallery {
+	width: 100%;
+	height: 100%;
+	background: rgb(52,52,52);
+	position: absolute;
+}

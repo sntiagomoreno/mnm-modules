@@ -1,0 +1,29 @@
+@import '../../functions';
+
+.event-story {
+	h1 {
+		display: block;
+		font-size: 39/16*1em;
+		padding: 0 95/39*1em 0 15/39*1em;
+		position: relative;
+		margin: -25/39*1em 0 em(30,39) 0;
+	}
+	.story-picture {
+		width: 100%;
+		min-height: 250px;
+		min-height: 75vw;
+		background: lightblue;
+	}
+	h2 {
+		font-size: em(16);
+		font-weight: 600;
+		padding: 0 em(15);
+		margin: 0 0 em(30) 0;
+	}
+	p {
+		font-size: em(14);
+		padding:  0 em(15,14);
+		line-height: 1.8;
+		margin: 0;
+	}
+}
